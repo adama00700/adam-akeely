@@ -1,17 +1,19 @@
-# adam-akeely
-ESP-INFM: Reversed Phonon Nonlinearity in Engineered SiC Lattices
 # ESP-INFM: Reversed Phonon Nonlinearity in Engineered SiC Lattices
-[<image-card alt="License: CC BY 4.0" src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" ></image-card>](http://creativecommons.org/licenses/by/4.0/)
-**Author**: Adam Akeely  
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
+
+**© 2025 Adam Akeely. All rights reserved.**  
 **Independent Researcher**  
 **November 2025**
 
 ---
 
 ## Abstract
-A nonlinear field-theoretic model coupling a **pre-engineered SiC lattice** (with Ni impurity) to an effective vacuum-like field via **terahertz Gaussian excitation**.  
-**Key result**: *Higher drive amplitude → smaller atomic displacement* — **inverse nonlinearity**.
+A **nonlinear field-theoretic model** couples a **pre-engineered 6×6×6 SiC lattice with Ni impurity** to an **effective vacuum-like field** via **terahertz Gaussian excitation**.
 
+**Key result**:  
+> **Higher drive amplitude → smaller atomic displacement**
+
+This is **not numerical instability** — it is **field self-stabilization** via:
 $$
 E_{\rm eff} \approx \alpha \left( \ddot{u} + \beta u^3 \right)
 $$
@@ -20,21 +22,21 @@ $$
 
 ## Key Results
 | Amplitude | $\Delta z_{\max}$ (Å) |
-|---------|----------------|
-| 0.10    | 0.591          |
-| 0.50    | 0.164          |
-| 1.00    | 0.055          |
+|-----------|-----------------------|
+| 0.10      | 0.591                 |
+| 0.50      | 0.164                 |
+| 1.00      | 0.055                 |
 
-→ **Negative log-log slope** = field self-stabilization.
+→ **Negative log-log slope** = **inverse nonlinearity** = **lattice-mediated field saturation**
 
 ---
 
 ## Repository Contents
-- `lammps.py` – Full simulation script (Colab-ready)
-- `SiC.tersoff` – Erhart/Albe potential
-- `POSCAR_SiC_Ni_clean` – 6×6×6 supercell
-- `disp_ni_*.dat` – Displacement data for A = 0.1, 0.5, 1.0
-- `plot_loglog.py` – Generate Fig. 1
+- `lammps.py` – Full simulation script (Google Colab ready)
+- `SiC.tersoff` – Erhart/Albe Tersoff potential
+- `POSCAR_SiC_Ni_clean` – VASP structure file
+- `disp_ni_*.dat` – Raw displacement data (3 amplitudes)
+- `plot_loglog.py` – Generate Fig. 1 (optional)
 
 ---
 
@@ -45,12 +47,12 @@ $$
 
 ---
 
-## Paper
-Preprint: [arXiv:2501.xxxxx](https://arxiv.org/abs/2501.xxxxx) *(coming soon)*
-
----
-
-## License
-[MIT License](LICENSE) – Free to use, cite, modify.
-
-> *"The lattice doesn't break under pressure. It learns to contain it."* – Adam Akeely
+## Citation
+```bibtex
+@article{akeely2025espinfm,
+  title={ESP-INFM: Reversed Phonon Nonlinearity in Engineered SiC Lattices},
+  author={Akeely, Adam},
+  journal={arXiv preprint arXiv:2501.xxxxx},
+  year={2025},
+  note={\url{https://github.com/adama0700/adam-akeely}}
+}
