@@ -1,7 +1,7 @@
 # adam-akeely
 ESP-INFM: Reversed Phonon Nonlinearity in Engineered SiC Lattices
 # ESP-INFM: Reversed Phonon Nonlinearity in Engineered SiC Lattices
-
+[<image-card alt="License: CC BY 4.0" src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" ></image-card>](http://creativecommons.org/licenses/by/4.0/)
 **Author**: Adam Akeely  
 **Independent Researcher**  
 **November 2025**
